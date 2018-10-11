@@ -12,6 +12,12 @@ public class MyLog {
         }
     }
 
+    public static void v(String msg){
+        if (isDebug) {
+            Log.v(TAG,msg);
+        }
+    }
+
     public static void e(String msg){
         if (isDebug) {
             Log.e(TAG,msg);
